@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas AI Todak Fusion - Menjelajahi Dunia AI: Perjalanan Menakjubkan ke Masa Depan Teknologi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HERO SECTION ala Universal Music Group -->
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1500&q=80" class="hero-bg" alt="Hero">
+        <div class="hero-content">
+            <img src="https://static.wixstatic.com/media/0902d9_f0fa8efe383947649122859bda892d01%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/0902d9_f0fa8efe383947649122859bda892d01%7Emv2.png" class="hero-logo" alt="Logo Todak Fusion">
+            <h1>Kelas AI Todak Fusion</h1>
+            <p>Menjelajahi Dunia AI: Perjalanan Menakjubkan ke Masa Depan Teknologi</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        
+        <div class="header">
+            <div class="logo-container">
+                <img src="https://static.wixstatic.com/media/0902d9_f0fa8efe383947649122859bda892d01%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/0902d9_f0fa8efe383947649122859bda892d01%7Emv2.png" alt="Todak Fusion Logo" class="logo">
+            </div>
+            <h1>🤖 Kelas AI Todak Fusion</h1>
+            <p>Menjelajahi Dunia AI: Perjalanan Menakjubkan ke Masa Depan Teknologi</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="card">
+                <h2>🤖 Apa itu AI?</h2>
+                <div class="card-content">
+                    <p>Artificial Intelligence (AI) adalah teknologi yang membolehkan komputer berfikir dan belajar seperti manusia.</p>
+                    
+                    <h3>Contoh AI dalam Kehidupan Seharian:</h3>
+                    <ul>
+                        <li>Siri & Google Assistant</li>
+                        <li>Netflix & YouTube recommendations</li>
+                        <li>Face ID & Face Recognition</li>
+                        <li>ChatGPT & AI chatbots</li>
+                        <li>Self-driving cars</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🧠 Jenis-jenis AI</h2>
+                <div class="card-content">
+                    <h3>1. Narrow AI (AI Sempit)</h3>
+                    <p>AI yang direka untuk tugas tertentu sahaja</p>
+                    <div class="example-box">
+                        <h4>Contoh:</h4>
+                        <ul>
+                            <li>Pengesahan wajah</li>
+                            <li>Penterjemah bahasa</li>
+                            <li>Pengesanan spam email</li>
+                        </ul>
+                    </div>
+
+                    <h3>2. General AI (AI Umum)</h3>
+                    <p>AI yang boleh melakukan pelbagai tugas seperti manusia</p>
+                    <div class="example-box">
+                        <h4>Contoh:</h4>
+                        <ul>
+                            <li>ChatGPT (sebahagian)</li>
+                            <li>AI yang boleh belajar apa-apa</li>
+                            <li>Masih dalam pembangunan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📚 Machine Learning</h2>
+                <div class="card-content">
+                    <p>Cabang AI yang membolehkan komputer belajar dari data tanpa diprogram secara eksplisit.</p>
+
+                    <h3>Bagaimana ML Berfungsi:</h3>
+                    <ol>
+                        <li><strong>Data Input:</strong> Komputer diberi data</li>
+                        <li><strong>Training:</strong> Komputer belajar pattern</li>
+                        <li><strong>Prediction:</strong> Komputer buat ramalan baru</li>
+                    </ol>
+
+                    <div class="example-box">
+                        <h4>Contoh Praktikal:</h4>
+                        <p>Mengajar AI mengenali kucing:</p>
+                        <ul>
+                            <li>Beri 1000 gambar kucing</li>
+                            <li>AI belajar ciri-ciri kucing</li>
+                            <li>AI boleh kenal kucing dalam gambar baru</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🔍 Deep Learning</h2>
+                <div class="card-content">
+                    <p>Subset Machine Learning yang menggunakan neural networks untuk belajar.</p>
+
+                    <h3>Neural Networks:</h3>
+                    <p>Model yang meniru cara otak manusia berfungsi dengan neuron-neuron yang saling berkait.</p>
+
+                    <div class="example-box">
+                        <h4>Aplikasi Deep Learning:</h4>
+                        <ul>
+                            <li>Pengenalan imej & video</li>
+                            <li>Pemprosesan bahasa semula jadi</li>
+                            <li>Penjanaan teks & imej</li>
+                            <li>Pengesanan suara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="interactive-demo">
+            <h2>🎮 Demo Interaktif: AI Text Generator</h2>
+            <p>Cuba tulis sesuatu dan lihat bagaimana AI boleh melengkapkan ayat anda:</p>
+            
+            <input type="text" id="userInput" class="demo-input" placeholder="Tulis permulaan ayat di sini...">
+            <button onclick="generateText()" class="demo-button">Generate AI Response</button>
+            
+            <div id="output" class="demo-output">
+                AI response akan muncul di sini...
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>📅 Sejarah AI</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">1950</div>
+                <div class="timeline-content">
+                    <strong>Alan Turing</strong> - Mencadangkan "Turing Test" untuk mengukur kecerdasan komputer
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1956</div>
+                <div class="timeline-content">
+                    <strong>Dartmouth Conference</strong> - Istilah "Artificial Intelligence" diperkenalkan
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">1997</div>
+                <div class="timeline-content">
+                    <strong>Deep Blue</strong> - Komputer IBM mengalahkan juara catur dunia
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2011</div>
+                <div class="timeline-content">
+                    <strong>Watson</strong> - AI IBM menang dalam pertandingan Jeopardy!
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">
+                    <strong>ChatGPT</strong> - OpenAI melancarkan chatbot AI yang revolusioner
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Masa Depan AI</h2>
+            
+            <h3>Trend Semasa:</h3>
+            <ul>
+                <li>Generative AI (ChatGPT, DALL-E, Midjourney)</li>
+                <li>AI dalam perubatan & diagnosis</li>
+                <li>Autonomous vehicles</li>
+                <li>AI untuk pendidikan peribadi</li>
+                <li>Quantum computing + AI</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Cabaran & Kebimbangan:</strong><br>
+                • Kehilangan pekerjaan<br>
+                • Bias dalam AI<br>
+                • Privasi & keselamatan<br>
+                • Pengawalseliaan AI
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>💡 Bagaimana Nak Mulakan?</h2>
+            
+            <h3>Langkah-langkah untuk Pemula:</h3>
+            <ol>
+                <li><strong>Belajar Python</strong> - Bahasa pengaturcaraan utama untuk AI</li>
+                <li><strong>Fahami Matematik</strong> - Statistik, algebra linear, calculus</li>
+                <li><strong>Ambil kursus online</strong> - Coursera, edX, Udemy</li>
+                <li><strong>Buat projek kecil</strong> - Mulakan dengan dataset mudah</li>
+                <li><strong>Join komuniti AI</strong> - GitHub, Reddit, Discord</li>
+            </ol>
+
+            <div class="example-box">
+                <h4>Platform Pembelajaran Percuma:</h4>
+                <ul>
+                    <li>Google AI Education</li>
+                    <li>Microsoft AI School</li>
+                    <li>Fast.ai</li>
+                    <li>Kaggle Learn</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="card">
+            <h2>🧠 Quiz AI</h2>
+            <p>Uji pengetahuan anda tentang AI dengan quiz interaktif ini!</p>
+            <button onclick="startQuiz()" class="demo-button">Mulakan Quiz</button>
+            <div id="quiz-container" class="quiz-container" style="display: none;">
+                <!-- Quiz content will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Platform AI Terbaik Untuk Beginner -->
+        <div class="card">
+            <h2>🌐 Platform AI Terbaik Untuk Beginner</h2>
+            <div id="ai-platform-list"></div>
+        </div>
+
+        <div class="footer">
+            <h3>🎓 Selamat Belajar AI!</h3>
+            <p>AI adalah masa depan teknologi. Mulakan perjalanan anda hari ini!</p>
+            <p><em>Dibuat untuk Kelas AI Todak Fusion - 2024</em></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

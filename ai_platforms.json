@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Google AI Education",
+    "url": "https://ai.google/education/",
+    "description": "Sumber pembelajaran AI percuma dari Google, sesuai untuk pemula dan intermediate."
+  },
+  {
+    "name": "Microsoft Learn AI",
+    "url": "https://learn.microsoft.com/en-us/training/paths/beginner-artificial-intelligence/",
+    "description": "Kursus AI percuma dari Microsoft, termasuk hands-on labs dan modul interaktif."
+  },
+  {
+    "name": "Fast.ai",
+    "url": "https://www.fast.ai/",
+    "description": "Kursus deep learning yang sangat beginner-friendly, percuma dan praktikal."
+  },
+  {
+    "name": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/overview",
+    "description": "Platform pembelajaran data science & AI dengan micro-courses dan hands-on coding."
+  },
+  {
+    "name": "Coursera - AI For Everyone (Andrew Ng)",
+    "url": "https://www.coursera.org/learn/ai-for-everyone",
+    "description": "Kursus AI paling popular untuk pemula, diajar oleh Andrew Ng. Tidak perlukan coding."
+  },
+  {
+    "name": "edX - Artificial Intelligence (Columbia University)",
+    "url": "https://www.edx.org/learn/artificial-intelligence/columbia-university-artificial-intelligence",
+    "description": "Kursus AI percuma dari Columbia University, sesuai untuk beginner dan intermediate."
+  },
+  {
+    "name": "Elements of AI",
+    "url": "https://www.elementsofai.com/",
+    "description": "Kursus AI percuma, interaktif dan beginner-friendly, dibangunkan oleh University of Helsinki."
+  },
+  {
+    "name": "IBM AI Engineering",
+    "url": "https://www.coursera.org/professional-certificates/ai-engineer",
+    "description": "Professional certificate untuk AI engineering, sesuai untuk beginner yang mahu ke tahap lebih tinggi."
+  }
+] 
