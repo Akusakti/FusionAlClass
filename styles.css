@@ -90,6 +90,252 @@ body::before {
         0 0 80px rgba(255, 193, 7, 0.5);
 }
 
+/* Instructor Section Styles */
+.instructor-section {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 
+        0 15px 40px rgba(0,0,0,0.5),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.instructor-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,215,0,0.1), transparent);
+    transition: left 0.8s ease;
+}
+
+.instructor-section:hover::before {
+    left: 100%;
+}
+
+.instructor-section h2 {
+    text-align: center;
+    color: #ffd700;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    letter-spacing: -0.02em;
+    font-family: 'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.instructor-profile {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.instructor-image {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.instructor-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffd700;
+    box-shadow: 
+        0 0 30px rgba(255, 215, 0, 0.5),
+        0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.instructor-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 40px rgba(255, 215, 0, 0.7),
+        0 15px 40px rgba(0,0,0,0.7);
+}
+
+.instructor-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #ffd700, #ffb300);
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    transform: rotate(-5deg);
+}
+
+.instructor-info {
+    flex: 1;
+}
+
+.instructor-info h3 {
+    color: #ffd700;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    letter-spacing: -0.01em;
+    font-family: 'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.instructor-title {
+    color: #667eea;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+    letter-spacing: 0.01em;
+}
+
+.instructor-description {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    letter-spacing: 0.01em;
+}
+
+.instructor-stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(255, 215, 0, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.stat-number {
+    display: block;
+    color: #ffd700;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #b0b0b0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.instructor-expertise h4 {
+    color: #ffd700;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    letter-spacing: 0.01em;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.instructor-quote {
+    background: rgba(255, 215, 0, 0.05);
+    border-left: 4px solid #ffd700;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.instructor-quote blockquote {
+    color: #e0e0e0;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.instructor-quote blockquote::before {
+    content: '"';
+    color: #ffd700;
+    font-size: 3rem;
+    line-height: 1;
+    margin-right: 10px;
+    float: left;
+    font-family: serif;
+}
+
+/* Responsive Design for Instructor Section */
+@media (max-width: 768px) {
+    .instructor-profile {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .instructor-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .instructor-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .instructor-stats {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        padding: 12px;
+    }
+    
+    .stat-number {
+        font-size: 1.4rem;
+    }
+    
+    .expertise-tags {
+        justify-content: center;
+    }
+}
+
 .content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
