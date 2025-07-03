@@ -247,4 +247,23 @@ function renderAIPlatformList() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', renderAIPlatformList); 
+document.addEventListener('DOMContentLoaded', renderAIPlatformList);
+
+// --- Supabase Client Init ---
+const supabaseUrl = 'https://arieiqemusnnvqfzwson.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaWVpcWVtdXNubnZxZnp3c29uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEzOTIxOTYsImV4cCI6MjA2Njk2ODE5Nn0.ciM-FFq26xEYRsjNjaaBkBznlheiwOiNcFG7YGxtXcM';
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+// Contoh fungsi fetch data dari table Supabase (ganti 'pelajar' dengan nama table sebenar)
+async function fetchPelajar() {
+    let { data, error } = await supabase
+        .from('pelajar')
+        .select('*');
+    if (error) {
+        console.error('Supabase error:', error);
+        alert('Gagal fetch data dari Supabase!');
+    } else {
+        console.log('Data pelajar:', data);
+        // Anda boleh render data ke HTML di sini
+    }
+} 
